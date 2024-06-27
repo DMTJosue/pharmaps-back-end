@@ -66,4 +66,15 @@
     </dependency>
 
   </dependencies>
+
+  <build>
+    <finalName>ecpi-pharmaps</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>11.0.15</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
