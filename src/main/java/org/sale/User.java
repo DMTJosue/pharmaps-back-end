@@ -12,17 +12,18 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Entity
-@Table(name  = "Pharmacy")
+@Table(name  = "Users")
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter @Setter
-public class Pharmacy {
+@Getter
+@Setter
+public class User {
     @Id
     @GeneratedValue
     private UUID id;
-    private String name; 
-    private double lat;
-    private double lon;
-    private boolean onDuty;
+    private String fullname;
+    private String email;
+    private String password;
+
 
 }
